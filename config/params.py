@@ -8,7 +8,8 @@ bot_token = os.getenv("BOT_TOKEN")
 interval_time = 60
 
 # API params
-price_url = os.getenv("PRICE_URL")
+current_price_url = os.getenv("PRICE_URL")
+history_crypto_url = os.getenv("HISTORY_URL")
 
 # Chanel params
 channel_link = "https://t.me/alert34234"
