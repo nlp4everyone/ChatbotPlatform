@@ -24,6 +24,12 @@ async def command_start(event):
 
 @client.on(events.NewMessage(incoming=True,chats=group_id,pattern="/price"))
 async def ask_price(event):
+    # Get chat info
+    chat = await event.get_chat()
+    # Get message info
+    message = event.message
+
+    # Get market history
     market_history = CoingeckoAPI.get_market_history() # Including prices,market caps and total volumes
     # Price
     list_price = market_history['prices']
@@ -31,10 +37,7 @@ async def ask_price(event):
     list_marketcap = market_history['market_caps']
     # Total volumes
     list_totalvolumes = market_history['total_volumes']
-    # Get chat info
-    chat = await event.get_chat()
-    # Get message info
-    message = event.message
+
 
     # Send message
     # await client.send_message(entity=chat,message=start_message,reply_to=message.id)
