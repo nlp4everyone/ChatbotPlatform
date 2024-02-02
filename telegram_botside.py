@@ -1,9 +1,10 @@
-import telethon,asyncio,time
+import asyncio
 from telethon import TelegramClient,events
 from config import params
-from tools import preprocess,streaming
+from tools import streaming
+from preprocessing import text_preprocess
 
-from tools.api import CoingeckoAPI
+from service.exchange_api import CoingeckoAPI
 client = TelegramClient(session="bot",api_id=params.api_id,api_hash=params.api_hash).start(bot_token=params.bot_token)
 # Bot only listen on this group
 group_id = 4123501748
@@ -52,7 +53,7 @@ async def one_iteration(entity,message):
 async def test_streaming(event):
     test_message = ("Cao Cao, courtesy name Mengde, was a Chinese statesman, warlord, and poet who rose to power towards the end of the Eastern Han dynasty (c. 184–220) and became the effective head of the Han central government during that period. "
                     "He laid the foundation for what was to become the state of Cao Wei (220–265), established by his son and successor Cao Pi, who ended the Eastern Han dynasty and inaugurated the Three Kingdoms period (220–280). Beginning in his own lifetime, a corpus of legends developed around Cao Cao which built upon his talent, his cruelty, and his perceived eccentricities.")
-    tokenized_text = preprocess.basic_tokenize(test_message)
+    tokenized_text = text_preprocess.basic_tokenize(test_message)
     output = streaming.stream(tokenized_text)
     # Get chat info
     chat = await event.get_chat()

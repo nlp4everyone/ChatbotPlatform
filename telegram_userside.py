@@ -34,6 +34,7 @@ async def main():
     # # Get entity
     # async for message in client.iter_messages(channel_name):
     #     print(message.chat.title, message.text)
+
 @client.on(events.NewMessage(incoming=True,chats = [6772754199]))
 async def reply(event):
     print(event)
