@@ -11,5 +11,8 @@ interval_time = 60
 current_price_url = os.getenv("PRICE_URL")
 history_crypto_url = os.getenv("HISTORY_URL")
 
+# Key
+openai_key = os.getenv("OPENAI_KEY")
+
 # Chanel params
 channel_link = "https://t.me/alert34234"
