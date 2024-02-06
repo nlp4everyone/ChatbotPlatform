@@ -18,9 +18,9 @@ chat_model = OpenAI(model_name=model_name)
 
 # Define chain
 
-def get_answer(question,instruction):
+def get_answer(instruction):
     # Define prompt
     prompt = ChatPromptTemplate.from_template(instruction + "Question:\n {question}" +"Answer:\n")
     chain = prompt | chat_model
-    output = chain.invoke({"question":question})
-    return output
+    # output = chain.invoke({"question":question})
+    return chain
