@@ -1,5 +1,3 @@
-import os
-
 from telethon import TelegramClient,events
 from config import params
 from service import run_prompt
@@ -45,12 +43,16 @@ async def command_start(event):
         # Strip text
         input_text = input_text.strip()
         instruction = input_text
+        # Send message back
+        await client.send_message(chat,f"Update instruction: {instruction}")
     else:
         question = event.text
-        print(f"Question:{question}")
-        print(f"Instruction:{instruction}")
+        # print(f"Question:{question}")
+        # print(f"Instruction:{instruction}")
         # Return answer
         anwser = run_prompt.get_answer(question,instruction)
+        # Send answer to group
+        await client.send_message(chat,f"Send : {anwser} to group")
 
         # Send out answer
         await client.send_message(entity=group_info, message=anwser)
