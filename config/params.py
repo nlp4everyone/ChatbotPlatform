@@ -16,3 +16,6 @@ openai_key = os.getenv("OPENAI_KEY")
 
 # Chanel params
 channel_link = "https://t.me/alert34234"
+
+# User phone
+user_phone = os.getenv("PHONE_NUMBER")

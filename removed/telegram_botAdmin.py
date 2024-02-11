@@ -1,7 +1,7 @@
 from telethon import TelegramClient,events
 from config import params
-from service import run_prompt
-from service.exchange_api import CoingeckoAPI
+from modules.ai_module import run_prompt
+from modules.api_module.exchange_api import CoingeckoAPI
 client = TelegramClient(session="bot2",api_id=params.api_id,api_hash=params.api_hash).start(bot_token=params.bot_token)
 # Bot only listen on this group
 group_id = 4123501748

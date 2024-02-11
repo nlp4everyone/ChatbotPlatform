@@ -4,7 +4,7 @@ from config import params
 from tools import streaming
 from preprocessing import text_preprocess
 
-from service.exchange_api import CoingeckoAPI
+from modules.api_module.exchange_api import CoingeckoAPI
 client = TelegramClient(session="bot",api_id=params.api_id,api_hash=params.api_hash).start(bot_token=params.bot_token)
 # Bot only listen on this group
 group_id = 4123501748
@@ -23,7 +23,7 @@ async def command_start(event):
     # Send message
     # await client.send_message(entity=chat,message=start_message,reply_to=message.id)
     # Send image
-    await client.send_file(entity=chat,file='img/start.png',caption=start_message,reply_to=message.id)
+    await client.send_file(entity=chat, file='../img/start.png', caption=start_message, reply_to=message.id)
 
 @client.on(events.NewMessage(incoming=True,chats=group_id,pattern="/price"))
 async def ask_price(event):
