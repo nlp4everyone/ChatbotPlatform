@@ -8,14 +8,11 @@ bot_token = os.getenv("BOT_TOKEN")
 interval_time = 60
 
 # API params
-current_price_url = os.getenv("PRICE_URL")
-history_crypto_url = os.getenv("HISTORY_URL")
+coingecko_key = os.getenv("COINGECKO_KEY")
+token_ids = os.getenv("TOKEN_IDS")
 
 # Key
 openai_key = os.getenv("OPENAI_KEY")
-
-# Chanel params
-channel_link = "https://t.me/alert34234"
 
 # User phone
 user_phone = os.getenv("PHONE_NUMBER")

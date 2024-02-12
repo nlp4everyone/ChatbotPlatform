@@ -78,6 +78,8 @@ async def callback_query_handler(event):
     # Callback query handler
     print(dir(event))
 
+    # Button click
+    print(event.data)
     # Define client
     client = event.client
 
