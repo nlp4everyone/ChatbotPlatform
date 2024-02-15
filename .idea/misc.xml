@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="Black">
-    <option name="sdkName" value="price_indicator" />
-  </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="price_indicator" project-jdk-type="Python SDK" />
-</project>

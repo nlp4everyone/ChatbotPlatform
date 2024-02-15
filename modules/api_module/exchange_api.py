@@ -30,5 +30,5 @@ class CoingeckoAPI():
         response = requests.get(market_url)
         # Return value
         if response.status_code != 200:
-            return None
+            raise Exception("Wrong data")
         return response.json()
