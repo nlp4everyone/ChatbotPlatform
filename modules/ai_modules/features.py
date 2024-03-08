@@ -8,15 +8,15 @@ from langchain_core.runnables.history import RunnableWithMessageHistory
 import os
 from langchain_community.chat_message_histories import StreamlitChatMessageHistory
 from langchain_community.chat_message_histories import Neo4jChatMessageHistory
-from langchain.memory import MotorheadMemory
 
 from config import params
 from langchain.memory import AstraDBChatMessageHistory
-from modules.ai_modules.custom_tool import BalanceTool
+from modules.ai_modules.tools import custom_tool
+from langchain.output_parsers import JsonOutputToolsParser
 # Import key
 os.environ["OPENAI_API_KEY"] = params.openai_key
-# model_name = "gpt-3.5-turbo-1106"
-# chat_model = ChatOpenAI(model_name=model_name)
+
+
 # Define memory
 memory = ConversationBufferMemory(return_messages=True)
 
@@ -80,7 +80,9 @@ class DeFiFeature():
         # Define prompt
         prompt = ChatPromptTemplate.from_template(f"Instruction:{instruction}")
         # Define chain
-        chain = prompt | self.chat_model | StrOutputParser() | BalanceTool()
+        chain = prompt | self.chat_model | StrOutputParser() | custom_tool.BalanceTool()
+
+
         return chain
 
     def get_memory(self):
@@ -112,22 +114,28 @@ class DeFiFeature():
         # self.update_memory(user_input=user_input,bot_answer=bot_answer)
         return bot_answer
 
-    def answer_swapping(self,question, instruction):
+    def answer_swapping(self,question, instruction,session_id):
         # Answer
-        answer = self.answer_normal_question(question=question,instruction=instruction)
+        answer = self.answer_normal_question(question=question,instruction=instruction,session_id=session_id)
         return answer
 
     def answer_balance(self,question,instruction):
         # Init chain
-        chain = self.tool_chain(instruction=instruction)
+        # chain = self.tool_chain(instruction=instruction)
 
-        # Define input
-        user_input = {"input": question}
-        # Answer
-        bot_answer = chain.invoke(user_input)
+        # # Define input
+        # user_input = {"input": question}
+        # # Answer
+        # bot_answer = chain.invoke(user_input)
+
+        # # Invoke the chain
+        # bot_answer = chain.invoke({"input": question})
+        # print(bot_answer)
+
 
         # Update memory
         # self.memory.save_context(user_input, {"output": str(bot_answer)})
+
         return bot_answer
 
 # class OldDeFiFeature():

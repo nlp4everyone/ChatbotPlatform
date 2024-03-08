@@ -5,8 +5,13 @@ class BalanceTool(BaseTool):
     description = "useful for when you need to access to balance or wallet of user"
     def _run(self,query:str):
         """Use the tool."""
-        return all_data.balance_data
+        return str(all_data.balance_data)
 
     async def _arun(self) -> str:
         """Use the tool asynchronously."""
         raise NotImplementedError("custom_search does not support async")
+
+@tool
+def get_balance(query:str):
+    """Get balance of user"""
+    return str(all_data.balance_data)

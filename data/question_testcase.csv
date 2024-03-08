@@ -1,0 +1,211 @@
+,,,,,,,,,
+STT,Purpose,question,reality,estimate,Priority,Type,Tester,Dev,Status
+,command,/wallets,,,,,,,Pass
+,,/help,,,High,Bug,,,bug
+,,/restart,,,,,,,bug
+,,/start,,,,,,,Pass
+,Use button in menu Wallets,Menu,,,,,,,Pass
+,,/help,,,,,,,Pass
+,,/wallets,,,,,,,Pass
+,,wallet address,copy wallet address,,,,,,Pass
+,,view pks,,,,,,,Note
+,,close view pks,,,,,,,Pass
+,,your balance,"view all network can connect: Ethereum, blast, solana",view all network can connect,,,,,Pass
+,,your balance/ethereum,view your balance/ethereum,view your balance/ethereum,,,,,Note
+,,your balance/blast,view your balance/blast,view your balance/blast,,,,,Note
+,,your balance/solana,comingsoon,comingsoon,,,,,Pass
+,,your balance/close,,,,,,,Pass
+,,/wallets / Replace wallet,"VIew ""Provide the private key of the wallet you wish to import.""","VIew ""Provide the private key of the wallet you wish to import.""",,,,,Pass
+,,"/wallets / Replace wallet / not fill ""Private Key""","auto delete ""..."" in 10s","auto delete ""..."" in 10s",,,,,Pass
+,,"/wallets / Replace wallet / fill ""Private Key""",Connect to your wallet,Connect to your wallet,,,,,Pass
+,,"/wallets / Transaction History
+","view menu ""Transaction History"" . Choose the network to check your history transaction: Ethereum, blast, solana.",,,,,,Pass
+,,"/wallets / Transaction History /Ethereum
+",view Transaction History | Ethereum,view Transaction History | Ethereum,,,,,Note
+,,"/wallets / Transaction History /Blast
+",view Transaction History | blast,view Transaction History | Blast,,,,,Note
+,,"/wallets / Transaction History /Solana
+",comingsoon,comingsoon,,,,,Pass
+,,"/wallets / Transaction History /Close
+",,,,,,,Pass
+,,"/wallets / Transaction History /Ethereum /close
+",,,,,,,Pass
+,,"/wallets / Transaction History /Blast /close
+",,,,,,,Pass
+,,/wallets /Close,,,,,,,Pass
+,,My balance,Check balance on Ethereum,#REF!,,,,,Pass
+,,,,,,,,,
+,,,,,,,,,
+,wrong command,/wallet,Bot không phản ứng,,,,,,Pass
+,,/helpes,,,,,,,Pass
+,,/restartsd,,,,,,,Pass
+,,....,,,,,,,Pass
+,,"/wallets / Transaction History
+",Mở 1 lần menu Wallets,Mở 1 lần menu Wallets,,,,,Pass
+,,/wallets/View PKs,Mở 1 lần menu Wallets,Mở 1 lần menu Wallets,,,,,Pass
+,,/wallets/Your balance,Mở 1 lần menu Wallets,Mở 1 lần menu Wallets,,,,,Pass
+,,/wallets/Replace Wallet,Mở 1 lần menu Wallets,Mở 1 lần menu Wallets,,,,,Pass
+question data bot,,,,,,,,,
+,Question about token,buy 1eth loot,"The latest price of Bitcoin (BTC) is $63,531","The latest price of Bitcoin (BTC) is $63,531. Here are some more details: ....",,,,,Pass
+,,Sell 100 loot to usdt,Vỉew BTC images. type png,Vỉew BTC images. type png,,,,,Pass
+,,buy loot,"The latest price of Whales Market (WHALES) is $2.6. Here are some more details:
+","The latest price of Whales Market (WHALES) is $2.6. Here are some more details:
+",,,,,Pass
+,,Sell 50% loot,,,High,Bug,,,bug
+,,Buy 30% balance,"The current market cap of Ethereum (ETH) is $417,176,693,076. ","The current market cap of Ethereum (ETH) is $417,176,693,076. ",,,,,Pass
+,,,,,,,,,Pass
+,,,"I can provide recent price information and details for Ethereum (ETH) but I'm unable to display live price charts or historical price data directly in this chat. However, I can tell you that the current price of Ethereum (ETH) is $3475.04.",,,,,,Pass
+,,,"The price of Whales Market ($WHALES) 24 hours ago was approximately $2.84430426, calculated based on the current price of $2.6 and the 24-hour price change of -$0.24430426. ",,,,,,Pass
+,,,"I previously provided the current price of LootBot ($LOOT) as $0.713936. However, I don't have real-time data or the ability to track price changes on an hourly basis directly within this interface.",,,,,,Pass
+,,,Bot không phản ứng,"For detailed price charts, historical data, and in-depth market analysis, I recommend visiting reputable financial news websites, cryptocurrency exchanges, or market tracking platforms like CoinGecko or CoinMarketCap. These sites offer extensive resources, including price charts over various timescales, market cap, trading volume, and more.",Medium,Bug,,,Pass
+,,,"The all-time high (ATH) price of Whales Market (WHALES) was $4.41. This peak price was reached on February 26, 2024. If you require more details or assistance with anything else, feel free to ask!",,,,,,Pass
+,,,"The current price of Whales Market (WHALES) is $2.6, and its all-time high (ATH) price was $4.41. This means it is approximately 59.18% of its ATH value.",,,,,,Pass
+,,,"The total trading volume of Whales Market (WHALES) over the last 24 hours is approximately $8,182,549",,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,list 6 token support check price,list 6 token support check price,High,Bug,,,Pass
+,,,21 token in ethereum và 12 token in blast,,,,,,Pass
+,,,4 action: token price check/wallet balance check/swapping token/tranfer send token,,,,,,Fixed
+,,,"I'm sorry, but I couldn't find the specific price information for the BEPE token on the Blast network or it's not available in the current data.",Ngược với 2 câu hỏi ngay bên trên,High,Bug,,,bug
+,,,"Currently, I do not have direct access to real-time data or the functionality to retrieve the balance of BEPE or any other token specifically from the Blast network through direct queries in this interaction. My capabilities are focused on processing commands based on the information you provide and relying on external tools or integrations that might not extend to real-time wallet balance inquiries for specific networks beyond the scopes predefined like Ethereum and Blast mainnet support.
+",Ngược với 2 câu hỏi ngay bên trên,High,Bug,,,Fixed
+,,,5 action : token price check / wallet balance check / swapping token/ transfer token/ brige token,,,,,,Fixed
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,dự tính là không được chuyển sang,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,Nếu đủ số dư thì xác nhận chuyển. k đủ thì hiện thông báo,,,,,
+,,,,Hiện thông báo yêu cầu điền đúng wallets address,,,,,
+,,,,Hiện thông báo yêu cầu điền đúng Network hoặc chọn lại token,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+question about blast,,,,,,,,,
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,Medium,,,,Note
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,High,Bug,,,bug
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass
+,,,,,,,,,Pass

@@ -58,7 +58,7 @@ def assign_task(task_index,question,instruction,session_id):
         answer = defiFeature.answer_balance(question=question,instruction=instruction)
     # Swap case
     elif task_index == TaskName.SWAP.value:
-        answer = defiFeature.answer_swapping(question=question,instruction=instruction)
+        answer = defiFeature.answer_swapping(question=question,instruction=instruction,session_id=session_id)
     # Other case
     elif task_index == TaskName.OTHER.value:
         answer = defiFeature.answer_normal_question(question=question,instruction=instruction,session_id=session_id)

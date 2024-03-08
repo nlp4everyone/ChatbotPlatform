@@ -1,6 +1,6 @@
 from telethon import events
 import asyncio
-from modules.telegram_module import base_markup
+from modules.telegram_module.base import base_markup
 from modules.api_module.exchange_api import CoingeckoAPI,PeriodType
 from modules.visualized_module.chart import CustomChart
 from modules import utils,algorithm
