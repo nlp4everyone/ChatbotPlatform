@@ -1,7 +1,7 @@
 from telethon import TelegramClient
 from config import params
-from modules.telegram_module.crypto_bot_handler import *
-from modules.telegram_module.base import base_button
+from services.telegram_service.crypto_bot_handler import *
+from services.telegram_service.base import base_button
 
 # Login
 client = TelegramClient(session="session/crypto_bot",api_id=params.api_id,api_hash=params.api_hash)

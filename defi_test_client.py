@@ -2,7 +2,7 @@ import random
 
 from telethon import TelegramClient
 from config import params
-from modules.telegram_module.defi_test.defi_test_handler import *
+from services.telegram_service.defi_test.defi_test_handler import *
 from modules.io_modules.pandas_modules import CsvModules
 import asyncio
 from telethon import events
