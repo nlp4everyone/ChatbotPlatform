@@ -1,5 +1,5 @@
 from telethon import TelegramClient
-from config import params
+from config import telegram_params
 from services.telegram_service.crypto_bot_handler import *
 from services.telegram_service.base import base_button
 
