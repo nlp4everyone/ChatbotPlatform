@@ -5,7 +5,10 @@ load_dotenv()
 api_id = int(os.getenv("API_ID"))
 api_hash = os.getenv("API_HASH")
 bot_token = os.getenv("BOT_TOKEN")
-interval_time = 60
 
 # User phone
 user_phone = os.getenv("PHONE_NUMBER")
+
+# params
+session_dir = "sessions"
+interval_time = 60

@@ -1,3 +1,4 @@
 .env
-cached_sessions
 .idea/
+config/__pycache__/
+sessions/*
