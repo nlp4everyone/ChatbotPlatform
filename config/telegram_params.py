@@ -9,6 +9,9 @@ bot_token = os.getenv("BOT_TOKEN")
 # User phone
 user_phone = os.getenv("PHONE_NUMBER")
 
-# params
-session_dir = "sessions"
+# default folder
+session_dir = "sessions_folder"
+audio_dir = "cached_voices_folder"
+image_dir = "cached_photos_folder"
+video_dir = "cached_videos_folder"
 interval_time = 60
